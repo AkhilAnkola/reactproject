@@ -1,0 +1,122 @@
+.prodmain{
+    display: block;
+    width: 90%;
+    padding: 0;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.prodmain .images{
+    display: block;
+    margin: auto;
+}
+.prodmain .images img{
+    max-height: 350px;
+}
+.prodmain .images  .subimageslist{
+    display: flex;
+    justify-content: center;
+}
+.prodmain .images .subimages img{
+    height: 100px;
+    width: 70px;
+}
+.prodmain .content{
+    margin: 20px 0px 20px 20px;
+}
+.prodmain .content h2.title{
+    font-size: 28px;
+    line-height: 32px;
+    margin: 5px 0px;
+    font-weight: 400;
+}
+.prodmain .content h2.rating{
+    font-size: 16px;
+    background: green;
+    display: inline;
+    padding: 0px 5px;
+    color: white;
+    border-radius: 2px;
+}
+.prodmain .content h2.dealofday{
+    color: rgba(0, 59, 196, 0.871);
+    margin: 10px 0px 0px;
+    font-size: 22px;
+}
+.prodmain .content h2.discount{
+    color: green;
+    font-size: 16px;
+}
+.prodmain .content p{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+.prodmain .content .sinfo{
+    font-size: 16px;
+    font-weight: 400;
+}
+.prodmain .content .sinfo span{
+    color: rgb(1, 82, 163);
+    font-weight: bold;
+}
+.prodmain .content  button{
+    margin: 20px 0px;
+    padding: 5px 20px;
+    border: 2px solid #b26e00;
+    border-radius: 50px;
+    background: #b26e00;
+    color: white;
+    font-size: 18px;
+}
+.prodmain .content  button:hover{
+    border: 2px solid #b26e00;
+    background: white;
+    color: #b26e00;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .prodmain .images img{
+        max-width: 500px;
+        height: 300px;
+    }   
+    .prodmain .content{
+        margin: 10px 0px 10px 10px;
+    }                                             
+}
+@media only screen and (max-width: 750px){
+    .prodmain{
+        grid-template-columns: 1fr;
+    }
+    .prodmain .images img{
+        display: block;
+        margin: auto;
+    }
+    .prodmain .content{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 550px){
+    .prodmain{
+        margin: 30px;
+    }
+    .prodmain .images img{
+        width: 95%;
+        height: auto;
+    }
+    .prodmain .content h2.title{
+        font-size: 26px;
+        line-height: 25px;
+    }
+    .prodmain .content h2.rating{
+        font-size: 14px;
+        padding: 0px 5px;
+    }
+    .prodmain .content h2.dealofday{
+        margin: 10px 0px 0px;
+        font-size: 18px;
+    }
+}
